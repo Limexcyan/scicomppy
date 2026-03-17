@@ -1,0 +1,77 @@
+(base) lukaszg@MacBook-Pro-Lukasz scicomppy % python -m venv .venv  
+(base) lukaszg@MacBook-Pro-Lukasz scicomppy % source .venv/bin/activate
+(.venv) (base) lukaszg@MacBook-Pro-Lukasz scicomppy % pip install numpy matplotlib pandas
+Collecting numpy
+  Downloading numpy-2.4.3-cp313-cp313-macosx_14_0_arm64.whl.metadata (6.6 kB)
+Collecting matplotlib
+  Using cached matplotlib-3.10.8-cp313-cp313-macosx_11_0_arm64.whl.metadata (52 kB)
+Collecting pandas
+  Downloading pandas-3.0.1-cp313-cp313-macosx_11_0_arm64.whl.metadata (79 kB)
+Collecting contourpy>=1.0.1 (from matplotlib)
+  Using cached contourpy-1.3.3-cp313-cp313-macosx_11_0_arm64.whl.metadata (5.5 kB)
+Collecting cycler>=0.10 (from matplotlib)
+  Using cached cycler-0.12.1-py3-none-any.whl.metadata (3.8 kB)
+Collecting fonttools>=4.22.0 (from matplotlib)
+  Downloading fonttools-4.62.1-cp313-cp313-macosx_10_13_universal2.whl.metadata (117 kB)
+Collecting kiwisolver>=1.3.1 (from matplotlib)
+  Downloading kiwisolver-1.5.0-cp313-cp313-macosx_11_0_arm64.whl.metadata (5.1 kB)
+Collecting packaging>=20.0 (from matplotlib)
+  Using cached packaging-26.0-py3-none-any.whl.metadata (3.3 kB)
+Collecting pillow>=8 (from matplotlib)
+  Downloading pillow-12.1.1-cp313-cp313-macosx_11_0_arm64.whl.metadata (8.8 kB)
+Collecting pyparsing>=3 (from matplotlib)
+  Downloading pyparsing-3.3.2-py3-none-any.whl.metadata (5.8 kB)
+Collecting python-dateutil>=2.7 (from matplotlib)
+  Using cached python_dateutil-2.9.0.post0-py2.py3-none-any.whl.metadata (8.4 kB)
+Collecting six>=1.5 (from python-dateutil>=2.7->matplotlib)
+  Using cached six-1.17.0-py2.py3-none-any.whl.metadata (1.7 kB)
+Downloading numpy-2.4.3-cp313-cp313-macosx_14_0_arm64.whl (5.2 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 5.2/5.2 MB 39.0 MB/s  0:00:00
+Using cached matplotlib-3.10.8-cp313-cp313-macosx_11_0_arm64.whl (8.1 MB)
+Downloading pandas-3.0.1-cp313-cp313-macosx_11_0_arm64.whl (9.9 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 9.9/9.9 MB 65.1 MB/s  0:00:00
+Using cached contourpy-1.3.3-cp313-cp313-macosx_11_0_arm64.whl (274 kB)
+Using cached cycler-0.12.1-py3-none-any.whl (8.3 kB)
+Downloading fonttools-4.62.1-cp313-cp313-macosx_10_13_universal2.whl (2.9 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 2.9/2.9 MB 54.0 MB/s  0:00:00
+Downloading kiwisolver-1.5.0-cp313-cp313-macosx_11_0_arm64.whl (64 kB)
+Using cached packaging-26.0-py3-none-any.whl (74 kB)
+Downloading pillow-12.1.1-cp313-cp313-macosx_11_0_arm64.whl (4.7 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 4.7/4.7 MB 67.5 MB/s  0:00:00
+Downloading pyparsing-3.3.2-py3-none-any.whl (122 kB)
+Using cached python_dateutil-2.9.0.post0-py2.py3-none-any.whl (229 kB)
+Using cached six-1.17.0-py2.py3-none-any.whl (11 kB)
+Installing collected packages: six, pyparsing, pillow, packaging, numpy, kiwisolver, fonttools, cycler, python-dateutil, contourpy, pandas, matplotlib
+Successfully installed contourpy-1.3.3 cycler-0.12.1 fonttools-4.62.1 kiwisolver-1.5.0 matplotlib-3.10.8 numpy-2.4.3 packaging-26.0 pandas-3.0.1 pillow-12.1.1 pyparsing-3.3.2 python-dateutil-2.9.0.post0 six-1.17.0
+
+[notice] A new release of pip is available: 25.3 -> 26.0.1
+[notice] To update, run: pip install --upgrade pip
+(.venv) (base) lukaszg@MacBook-Pro-Lukasz scicomppy % pip install --upgrade pip
+Requirement already satisfied: pip in ./.venv/lib/python3.13/site-packages (25.3)
+Collecting pip
+  Downloading pip-26.0.1-py3-none-any.whl.metadata (4.7 kB)
+Downloading pip-26.0.1-py3-none-any.whl (1.8 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.8/1.8 MB 14.5 MB/s  0:00:00
+Installing collected packages: pip
+  Attempting uninstall: pip
+    Found existing installation: pip 25.3
+    Uninstalling pip-25.3:
+      Successfully uninstalled pip-25.3
+Successfully installed pip-26.0.1
+(.venv) (base) lukaszg@MacBook-Pro-Lukasz scicomppy % pip list
+Package         Version
+--------------- -----------
+contourpy       1.3.3
+cycler          0.12.1
+fonttools       4.62.1
+kiwisolver      1.5.0
+matplotlib      3.10.8
+numpy           2.4.3
+packaging       26.0
+pandas          3.0.1
+pillow          12.1.1
+pip             26.0.1
+pyparsing       3.3.2
+python-dateutil 2.9.0.post0
+six             1.17.0
+(.venv) (base) lukaszg@MacBook-Pro-Lukasz scicomppy % 
