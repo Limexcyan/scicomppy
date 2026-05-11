@@ -41,3 +41,37 @@ plt.gca().set_aspect("equal", adjustable="box")
 plt.tight_layout()
 plt.savefig("notebook9ex2.png")
 plt.close()
+
+# Exercise 9.3
+
+def sum_distances(x, y):
+    d1 = np.sqrt((x + 1)**2 + y**2)
+    d2 = np.sqrt((x - 1)**2 + y**2)
+    return d1 + d2
+
+
+x = np.linspace(-2, 2, 400)
+y = np.linspace(-2, 2, 400)
+
+X, Y = np.meshgrid(x, y)
+Z = sum_distances(X, Y)
+
+plt.imshow(
+    Z,
+    extent=[-2, 2, -2, 2],
+    origin="lower",
+    cmap="viridis"
+)
+
+plt.colorbar(label="Sum of distances")
+plt.scatter([-1, 1], [0, 0], color="red", label="Fixed points")
+
+plt.xlabel("x")
+plt.ylabel("y")
+plt.title("Sum of distances from (-1,0) and (1,0)")
+plt.legend()
+plt.gca().set_aspect("equal", adjustable="box")
+
+plt.tight_layout()
+plt.savefig("notebook9ex3.png")
+plt.close()
